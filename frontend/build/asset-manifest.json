@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dff73d44.css",
+    "main.js": "/static/js/main.7c091ec3.js",
+    "static/media/perfume_image_1.jpg": "/static/media/perfume_image_1.f7a60e440f2034cba797.jpg",
+    "static/media/play_store.png": "/static/media/play_store.a7c8ca28b4475c3b088b.png",
+    "static/media/ecommerce_sellWithUs.svg": "/static/media/ecommerce_sellWithUs.8b064135230dfb68f17b1cf8a089049a.svg",
+    "index.html": "/index.html",
+    "main.dff73d44.css.map": "/static/css/main.dff73d44.css.map",
+    "main.7c091ec3.js.map": "/static/js/main.7c091ec3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dff73d44.css",
+    "static/js/main.7c091ec3.js"
+  ]
+}
