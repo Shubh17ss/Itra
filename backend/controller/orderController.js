@@ -108,7 +108,7 @@ const getMyOrders = (req, res) => {
                 results.rows.forEach(order => {
                     pool.query('SELECT product_id, quantity from ordered_products where order_id=$1', [order.order_id], (error, results) => {
                         if (error)
-                            reject();
+                            reject(error);
                         else {
                             counter++;
                             let order_total=order.order_total.toLocaleString();
@@ -131,8 +131,8 @@ const getMyOrders = (req, res) => {
                     TotalOrders: results.rows.length,
                     orders,
                 });
-            }).catch(() => {
-                res.status(400).send('Internal server error');
+            }).catch((error) => {
+                res.status(400).send(error.message);
             })
 
         }
