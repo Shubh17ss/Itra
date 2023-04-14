@@ -106,7 +106,7 @@ const getMyOrders = (req, res) => {
                 let counter = 0;
                 let len = results.rows.length;
                 results.rows.forEach(order => {
-                    pool.query('SELECT product_id, quantity from ordered_products where order_id=$1', [order.order_id], (error, results) => {
+                    client.query('SELECT product_id, quantity from ordered_products where order_id=$1', [order.order_id], (error, results) => {
                         if (error)
                             reject(error);
                         else {
